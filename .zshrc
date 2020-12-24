@@ -10,3 +10,4 @@ compinit
 
 # custom PROMPT
 PROMPT='%K{166}%t%k %F{33}%~%f: '
+# color numbers: https://jonasjacek.github.io/colors/
