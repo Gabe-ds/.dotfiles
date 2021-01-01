@@ -1,5 +1,6 @@
 # PATH
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"
 
 # Alias
 alias code="open -a /Applications/Visual\ Studio\ Code.app"
