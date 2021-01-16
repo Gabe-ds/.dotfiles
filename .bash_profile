@@ -1,3 +1,6 @@
+# Custom PROMPT
+PS1='\[\e[30;47m\] \D{%H:%M} \[\e[37;46m\]\[\e[30m\] \w \[\e[36;49m\]\[\e[0m\]: '
+
 # issue that jupyterlab uses PowerShell
 export BROWSER='/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe'
 
