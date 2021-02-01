@@ -3,6 +3,13 @@ alias ls="ls -G"
 alias ll="ls -lG"
 alias la="ls -laG"
 
+# PATH
+alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew"
+
+# Alias
+alias code="open -a /Applications/Visual\ Studio\ Code.app"
+alias charm="open -a /Applications/PyCharm.app"
+
 # pyenv settings
 export PYENV_ROOT=${HOME}/.pyenv
 if [ -d "${PYENV_ROOT}" ]; then
