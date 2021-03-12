@@ -8,6 +8,8 @@ export BROWSER='/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe'
 export EDITOR=nano
 
 # use Japanese Env
+#export LANGUAGE = 
+#export LC_ALL =
 export LANG="ja_JP.UTF-8"
 
 # Homebrew
