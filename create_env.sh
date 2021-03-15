@@ -10,8 +10,8 @@ cp .dotfiles/.zprofile ./
 cp .dotfiles/.zshrc ./
 source .zprofile .zshrc
 
-# Install pyenv, pipenv
-brew install pyenv pipenv
+# Install pyenv, pipenv, postgresql
+brew install pyenv pipenv postgresql
 
 # Setup Python 3.8.2
 pyenv install 3.8.2
