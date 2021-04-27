@@ -7,6 +7,10 @@ alias la="ls -laG"
 alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew"
 
 # pyenv settings
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
+
 export PYENV_ROOT=${HOME}/.pyenv
 if [ -d "${PYENV_ROOT}" ]; then
     export PATH=${PYENV_ROOT}/bin:$PATH
@@ -28,3 +32,7 @@ function cd {
 }
 
 auto_pipenv_shell
+
+# nodenv settings
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"
