@@ -8,7 +8,7 @@ alias code="open -a /Applications/Visual\ Studio\ Code.app"
 alias charm="open -a /Applications/PyCharm.app"
 
 # Enable zsh completion
-autoload -U compinit
+autoload -Uz compinit
 compinit
 
 # custom PROMPT
