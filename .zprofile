@@ -3,6 +3,8 @@ alias ls="ls -G"
 alias ll="ls -lG"
 alias la="ls -laG"
 
+alias cat="bat -p"
+
 # PATH
 alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew"
 
@@ -11,11 +13,9 @@ export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
 
-export PYENV_ROOT=${HOME}/.pyenv
-if [ -d "${PYENV_ROOT}" ]; then
-    export PATH=${PYENV_ROOT}/bin:$PATH
-    eval "$(pyenv init -)"
-fi
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
 
 # run pipenv shell automatically
 function auto_pipenv_shell {
