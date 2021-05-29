@@ -5,7 +5,7 @@ alias la="ls -laG"
 
 alias cat="bat -p"
 
-alias brew godmode="brew update; brew upgrade; brew cleanup; brew doctor;"
+alias "brew godmode"="brew update; brew upgrade; brew cleanup; brew doctor;"
 
 # PATH
 alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew"
