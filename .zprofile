@@ -1,9 +1,9 @@
 # more useful ls command
-alias ls="ls -G"
-alias ll="ls -lG"
-alias la="ls -laG"
+alias ls="ls -hG"
+alias ll="ls -hlG"
+alias la="ls -hlaG"
 
-alias cat="bat -p"
+alias cat="bat -pp"
 
 alias brew-godmode="brew update; brew upgrade; brew cleanup; brew doctor;"
 
