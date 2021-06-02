@@ -1,5 +1,35 @@
 #!/bin/sh
+# If an error occurs, exit the shell
+set -e
 
+# Install Homebrew
+echo "----------Install Homebrew----------"
+xcode-select --install
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo "----------END----------"
+
+# Install packages and Apps, Fonts via Homebrew
+echo "----------Install Packages and Apps, Fonts----------"
+brew bundle --file=.dotfiles/Brewfile
+echo "----------END----------"
+
+# Install .zshrc and .zprofile via Github
+echo "----------Install .zshrc and .zprofile via Github----------"
+git clone https://github.com/Gabe-ds/.dotfiles.git
+cp .dotfiles/.zshrc ~/.zshrc
+cp .dotfiles/.zprofile ~/.zprofile
+source .zshrc
+source .zshrc
+echo "----------END----------"
+
+# Built Python Environment
+echo "----------Built Python Environment----------"
+pyenv install 3.8.2
+pyenv global 3.8.2
+echo "----------END----------"
+
+# Set up Sytem Preferences via defauults write command
+echo "----------Set up Sytem Preferences via defauults write command----------"
 # Dock
 
 # Dockのサイズを34にする
@@ -76,3 +106,7 @@ defaults write com.apple.CrashReporter DialogType none
 # セキュリティとプライバシー > 一般 > ダウンロードした
 # アプリケーションの実行許可で起動を妨げないようにする
 sudo spctl --master-disable
+
+killall Dock
+echo "----------END----------"
+
