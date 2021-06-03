@@ -5,6 +5,7 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "sanemat/font"
 
+brew "bat"
 brew "curl"
 brew "ffmpeg"
 brew "git"

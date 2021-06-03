@@ -6,6 +6,7 @@ alias la="ls -hlaG"
 alias cat="bat -pp"
 
 alias brew-godmode="brew update; brew upgrade; brew cleanup; brew doctor;"
+alias goodbye="sudo purge; sudo reboot -n;"
 
 # PATH
 alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew"
