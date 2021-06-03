@@ -26,7 +26,6 @@ brew "sanemat/font/ricty"
 
 cask "adobe-creative-cloud"
 cask "appcleaner"
-cask "blackhole"
 cask "cyberduck"
 cask "daisydisk"
 cask "discord"
@@ -38,9 +37,9 @@ cask "microsoft-word"
 cask "microsoft-powerpoint"
 cask "obs"
 cask "obs-virtualcam"
-cask "resilio-sync"
 cask "visual-studio-code"
 cask "vlc"
+cask "zoom"
 
 mas "Final Cut Pro", id: 424389933
 mas "GoodNotes", id: 1444383602
