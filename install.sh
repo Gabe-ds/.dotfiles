@@ -39,14 +39,15 @@ defaults write com.apple.dock mineffect -string "scale"
 # ウィンドウのダブルクリックで拡大/縮小にする
 defaults delete -g AppleActionOnDoubleClick
 # ウィンドウをアプリケーションアイコンにしまう（チェックボックスオン）
-defaults write com.apple.dock minimize-to-application -bool true
+defaults write com.apple.dock minimize-to-application -bool "true"
 # 起動中のアプリケーションをアニメションで表示（チェックボックスオン）
 defaults delete com.apple.dock launchanim
 # Dockを自動的に表示/非表示（チェックボックスオフ）
 defaults delete com.apple.dock autohide
 # 起動済みのアプリケーションにインジケーターを表示（チェックボックスオン）
 defaults delete com.apple.dock show-process-indicators
-
+# Dockに最近使用したアプリケーションを表示しない（チェックボックスオフ）
+defaults write com.apple.dock show-recents -bool "false"
 
 # Finder
 
@@ -57,7 +58,8 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
 defaults write com.apple.finder ShowStatusBar -bool true
 # タブバーを表示
 defaults write com.apple.finder ShowTabView -bool true
-
+# Set sidebar icon size
+defaults write NSGlobalDomain "NSTableViewDefaultSizeMode" -int "1" && killall Finder
 
 # Keyboard
 
