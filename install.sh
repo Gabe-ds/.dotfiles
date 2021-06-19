@@ -14,6 +14,11 @@ brew bundle --file=.dotfiles/Brewfile
 echo "----------END----------"
 
 # Install .zshrc and .zprofile via Github
+echo "----------For Screenshot----------"
+mkdir ~/Pictures/Screenshots
+echo "----------END----------"
+
+# Install .zshrc and .zprofile via Github
 echo "----------Install .zshrc and .zprofile via Github----------"
 git clone https://github.com/Gabe-ds/.dotfiles.git
 cp .dotfiles/.zshrc ~/.zshrc
@@ -103,12 +108,14 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 defaults write com.apple.CrashReporter DialogType -string "none"
 # スクリーンショットの影をなくす
 defaults write com.apple.screencapture disable-shadow -bool true
+# スクリーンショットの保存先を`~/Pictures/Screenshots`にする
+defaults write com.apple.screencapture location ~/Pictures/Screenshots
 # クラッシュ時にレポートダイアログを出さない
 defaults write com.apple.CrashReporter DialogType none
 # セキュリティとプライバシー > 一般 > ダウンロードした
 # アプリケーションの実行許可で起動を妨げないようにする
 sudo spctl --master-disable
 
-killall Dock
+killall Dock; killall SystemUIServer;
 echo "----------END----------"
 
